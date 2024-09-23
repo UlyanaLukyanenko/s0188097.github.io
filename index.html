@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ссылки</title>
+    </head>
+
+<body>
+    <h1>Список ссылок</h1>
+    <a href = "index (1) (1).html">Файл index.html</a>
+
+    <ul>
+        <li>Абсолютная гиперссылка на главную страницу сайта kubsu.ru: <a href="http://kubsu.ru/">Главная страница kubsu.ru</a></li>
+        <li>Абсолютная гиперссылка на главную страницу сайта kubsu.ru в протоколе https: <a href="https://kubsu.ru/">Главная страница kubsu.ru</a></li>
+        <li>Ссылка-изображение: <a href="https://kubsu.ru/"><img src = "https://cdn.culture.ru/images/a768f356-af14-5388-9bf3-c08e75843958" width = 200 alt = "Пример изображения"></a></li>
+        <li>Сокращенная ссылка на внутреннюю страницу: <a href="./index2.html">Внутренняя страница</a></li>
+        <li>Сокращенная ссылка на главную страницу: <a href="./index.html">Главная страница</a></li>
+        <li>Ссылка на фрагмент текущей страницы<a href="#forma">Перейти к форме</a></li>
+         <li>Ссылка с 3 параметрами в URL<a href="https://example.com?param1=value1&param2=value2&param3=value3">Пример ссылки</a></li>
+        <li>Ссылка с параметром id в URL<a href="https://example.com?id=777">Пример ссылки</a></li>
+        <li>Относительная ссылка в текущем каталоге<a href="index2.html">Ссылка</a></li>
+        <li>Относительная ссылка в каталоге about<a href="about/indexx.html">Пример ссылки</a></li>
+        <li>Относительная ссылка на страницу в каталоге уровнем выше текущего <a href="../about/indexx.html">Пример ссылки</a></li>
+        <li>Относительная ссылка на страницу в каталоге двумя уровнями выше<a href="../../about/indexx.html">Пример ссылки</a></li>
+        <li>Ссылка на фрагмент страницы стороннего сайта<a href="https://example.com#section-id">Пример ссылки</a></li>
+        <li>Ссылка с пустым href: <a href="">Пример ссылки</a></li>
+        <li>Ссылка без href: <a>Пример ссылки</a></li>
+        <li>Ссылка, запрещенная для индексации поисковикам: <a href="https://kubsu.ru/" rel="noindex">Пример ссылки</a></li>
+        <li>Ссылка, по которой запрещен переход поисковикам: <a href="https://kubsu.ru/" rel="nofollow">Пример ссылки</a></li>
+        <li>Ссылка на файл на сервере FTP с авторизацией<a href="ftp://username:password@ftp.example.ru/file.txt">Ссылка</a></li>
+    </ul>
+
+    <h3> Нумерованный список ссылок с подписями title</h3>
+    <ol>
+        <li><a href="https://kubsu.ru/" title="Сайт кубгу">Первая ссылка</a></li>
+        <li><a href="https://www.kubsu.ru/ru/fktipm" title = "Сайт ФКТиПМ">Вторая ссылка</a></li>
+    </ol>
+
+    <<li>Это контекстная <a href="http://kubsu.ru/">ссылка</a> в тексте абзаца</li>
+
+    <img src="https://cdn.culture.ru/images/b7f5ba6c-5ea4-51f7-a6b5-5a4e46f5d8ab" width = 400 usemap="#image" alt="Прямоугольное изображение">
+   
+    <map name="image">
+        <area shape="rect" coords="0,0,400,400" href="https://ru.wikipedia.org/wiki/Киты" alt="Перейти на сайт">
+    </map>
+    
+ <h3>Круглая область</h3>
+    
+    <img src="https://banner2.cleanpng.com/20180414/tje/kisspng-computer-icons-circle-oval-ring-5ad1c899b2ec05.7579304815236978177329.jpg"  width = 100 usemap="#image1" alt="Круглое изображение">
+
+    <map name="image1">
+        <area shape="circle" coords="100,100,100" href="https://www.cleanpng.com/png-computer-icons-circle-oval-ring-1176374/" alt="Перейти на сайт">
+    </map>
+        
+    <h2> Форма</h2>
+    <form id = "forma" action="/submit_form" method="POST">
+        <label for="fio">ФИО:</label><br>
+        <input type="text" id="fio" name="fio" placeholder="Введие ФИО"><br><br>
+    
+        <label for="number">Телефон:</label><br>
+        <input type="tel" id="number" name="number" placeholder="Введите телефон"><br><br>
+    
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" placeholder="Введите email"><br><br>
+    
+        <label for="birthday">Дата рождения:</label><br>
+        <input type="date" id="birthday" name="birthday"><br><br>
+    
+        <label for="gender">Пол:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Мужской</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Женский</label><br><br>
+    
+        <label for="languages">Ваш любимый язык программирования:</label><br>
+        <select id="languages" name="languages[]" multiple>
+          <option value="Pascal">Pascal</option>
+          <option value="C">C</option>
+          <option value="C++">C++</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="PHP">PHP</option>
+          <option value="Python">Python</option>
+          <option value="Java">Java</option>
+          <option value="Haskel">Haskel</option>
+          <option value="Clojure">Clojure</option>
+          <option value="Prolog">Prolog</option>
+          <option value="Scala">Scala</option>
+          <option value="Fortran">Fortran</option>
+        </select><br><br>
+    
+        <label for="biography">Биография:</label><br>
+        <textarea id="biography" name="biography"></textarea><br><br>
+    
+        <input type="checkbox" id="agreement" name="agreement">
+        <label for="agreement">С контрактом ознакомлен(а)</label><br><br>
+        
+        <input type="submit" value="Сохранить">
+      </form>
+</body>
+</html>
