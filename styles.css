@@ -81,13 +81,13 @@ body {
     margin: 0 auto; 
     margin-top: 20px;
     width: 100%;
-    text-align: center;
 }
 
 .test .marks {
     list-style-position: inside;
-    text-align: center;
+    text-align: left;
     margin: 0px;
+    align-items: center;
 }
 
 table {
