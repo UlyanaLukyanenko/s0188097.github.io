@@ -2,33 +2,31 @@ menu {
     max-width: 960px;
     color: rgb(102, 9, 97);
     text-decoration: none;  
-    margin: 0 auto; /* Центрируем контейнер */
-    text-align: left; /* Выравниваем текст по левому краю */
+    margin: 0 auto;
+    text-align: left;
 }
 
-
 .logo {
-    width: 350px;  /* Фиксированная ширина */
-    height: auto;  /* Высота будет автоматически подобрана для сохранения пропорций */
-    max-width: 100%; /* Чтобы логотип не выходил за края родителя */
+    width: 350px; 
+    height: auto; 
 }
 
 footer {
-    text-align: left;
+    text-align: center;
     background-color: rgb(255, 255, 255);
     padding: 5px;
     font-size: 20pt;
-    margin: 0; /* Убираем верхний отступ */
-    width: 100vw; /* Используем 100vw для ширины, чтобы подвал занимал всю ширину окна */
-    position: relative; /* Здесь можно указать позиционирование, если нужно */
-    left: 50%; /* Центрируем подвал */
-    right: 50%; /* Центрируем подвал */
-    transform: translateX(-50%); /* Центрируем подвал */
+    margin: 0; 
+    width: 100vw; 
+    position: relative; 
+    left: 50%;
+    right: 50%; 
+    transform: translateX(-50%);
 }
 
 div.code {
-    margin: 0 auto; /* Центрируем контейнер */
-    text-align: left; /* Выравниваем текст по левому краю */
+    margin: 0 auto;
+    text-align: left; 
     font-size: 12pt;
     font-family: "Courier New", monotype;
     font-weight: bold;
@@ -37,10 +35,10 @@ div.code {
 }
 
 header {
-    margin: 0; /* Убираем отступ */
+    margin: 0; 
     text-align: center;
-    width: 100%; /* Используем 100% для ширины */
-    background-color: white; /* Белый цвет для шапки */
+    width: 100%; 
+    background-color: white; 
     padding: 10px; 
     height: 80px;
     color: rgb(102, 9, 97);
@@ -66,7 +64,7 @@ header {
 .nav a {
     color: rgb(255, 0, 149);
     margin: 10px;
-    text-decoration: none; /* Убираем подчеркивание */
+    text-decoration: none;
 }
 
 .nav a:hover {
@@ -76,26 +74,19 @@ header {
 
 body {
     background-color: #FFE4E1;
-    text-align: left; /* Выровнять по левому краю */
+    text-align: left;
 }
 
-.container {
-    max-width: 960px; /* Максимальная ширина контейнера */
-    margin: 0 auto; /* Центрируем контейнер */
-    padding: 20px; /* Добавим немного отступов */
-}
 .test {
-    margin: 0 auto; /* Центрируем контейнер */
-    text-align: left; /* Выравниваем текст по левому краю */
+    margin: 0 auto;
+    text-align: left; 
     margin-top: 20px;
     width: 100%;
     text-align: center;
 }
 
 .test .marks {
-    /*Устанавливаем маркер/номер внутри пункта списка*/
     list-style-position: inside;
-    /*Центрируем*/      
     text-align: center;
     margin: 0px;
 }
