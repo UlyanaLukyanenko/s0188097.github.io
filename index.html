@@ -1,135 +1,108 @@
 <!DOCTYPE html>
-
+<html lang="ru">
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <title> Главная страница </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание 2</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <img class="img-header"
-            src="https://sun1-26.userapi.com/s/v1/if1/vv2-xBj5Lh_p_bhrZFvB04B-gHbkoR_HDSDv6c_2Lj5DzJ78uxJKFrOou9h5aHIxMIZDqxEz.jpg?size=1000x1000&quality=96&crop=0,0,1000,1000&ava=1"
-            alt="Описание картинки для скрин-ридеров и поисковиков" />
-        <h1> Цветочный склад </h1></em>
-        <nav class="nav">
-            <a href="#menu">Меню</a>
-            <a href="https://dali-gardens.ru/dostavka/">Доставка</a>
-            <a
-                href="https://cvetemipahnem.ru/?utm_referer=geoadv_search_yabs&utm_ya_campaign=40557241743&yabizcmpgn=35744733&utm_source=geoadv_search_yabs&utm_candidate=59477211560&utm_content=16538273918&etext=2202.ZCOO8DG3DXdWmf_Yc66aU6jrsVXCH1N62MeJhO_9gZf5SWKhEtkA-JsQYIiwhpnfd2dob3J5ZmJ4YWJkZ3lwYg.f69f54c75789b0b633cc12be87fb1f5e7b0b6d5c&yclid=18367619040427900927">Ассортимент</a>
-        </nav>
-    </header>
-    <div class="test">
-        <ul class="marks">
-                <div class ="center-left">
-                    <h2>Список гиперссылок</h2>
-                </div>
-            <ol>
-                <div id="menu">
-                    <li><a href="http://www.kubsu.ru/"> Ссылка 1  </a></li><!-- 1 -->
-                    <li><a href="https://www.kubsu.ru/index.php">Ссылка 2 </a> </li><!-- 2 -->
-                    <li><a href="#inside">Ссылка 3 </a></li><!-- 4 -->
-                </div>
-                <h2> Таблица</h2>
-            </ol>
-            <!-- ТАБЛИЧКА -->
 
-            <table border="1" cellpadding="5" cellspacing="0">
-                <tbody>
-                    <tr id="pink">
-                        <td colspan="4"> ПРИОБРЕТЕНИЕ ЦВЕТОВ </td>
-                    </tr>
-                    <tr id="lightgreen">
-                        <td colspan="2"> Название цветов и цена </td>
-                        <td> Цвет </td>
-                        <td> Название магазина </td>
-                    </tr>
-                    <tr id="pink">
-                        <td> Розы </td>
-                        <td> 500 руб. </td>
-                        <td> Красный </td>
-                        <td> Цветочный рай </td>
-                    </tr>
-                    <tr id="lightgreen">
-                        <td> Тюльпаны </td>
-                        <td> 300 руб. </td>
-                        <td> Желтый </td>
-                        <td> Садовая сказка </td>
-                    </tr>
-                    <tr id="pink">
-                        <td> Лилии </td>
-                        <td> 450 руб. </td>
-                        <td> Белый </td>
-                        <td> Цветы на счастье </td>
-                    </tr>
-                    <tr id="lightgreen">
-                        <td> Герберы </td>
-                        <td> 350 руб. </td>
-                        <td> Оранжевый </td>
-                        <td> Цветочный уголок </td>
-                    </tr>
-                    <tr id="pink">
-                        <td> Каллы </td>
-                        <td> 600 руб. </td>
-                        <td> Фиолетовый </td>
-                        <td> Магазин флористики </td>
-                    </tr>
-                    <tr id="lightgreen">
-                        <td> Фиалки </td>
-                        <td> 200 руб. </td>
-                        <td> Синий </td>
-                        <td> Цветущие мечты </td>
-                    </tr>
-                </tbody>
-            </table>
-            <!-- ФОРМА -->
-            <!-- ФОРМА -->
-            <!-- ФОРМА -->
-            <h2> Форма</h2>
-            <form id="forma" action="/submit_form" method="POST">
-                <label for="fio">ФИО:</label><br>
-                <input type="text" id="fio" name="fio" placeholder="Введие ФИО"><br><br>
+  <header>
+    <img src="https://img.freepik.com/premium-vector/abstract-cube-hexagon-colorful-vector-logo-template_248261-83.jpg" alt="" width="100px" height="100px">
+    <h1 style="text-align: center;">Задание 2</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  
 
-                <label for="number">Телефон:</label><br>
-                <input type="tel" id="number" name="number" placeholder="Введите телефон"><br><br>
+  <main>
+    <section>
+      <h2>Список гиперссылок</h2>
+      <ul>
+        <li><a href="#">Ссылка 1</a></li>
+        <li><a href="#">Ссылка 2</a></li>
+        <li><a href="#">Ссылка 3</a></li>
+      </ul>
+    </section>
 
-                <label for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email" placeholder="Введите email"><br><br>
+    <section>
+        <h2>Книги</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">Каталог книг</th>
+                </tr>
+                <tr>
+                    <th>Фантастика</th>
+                    <th>Детектив</th>
+                    <th>Научная литература</th>
+                    <th>Исторические романы</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">1984</td>
+                    <td>Убийство на улице Морг</td>
+                    <td>Краткая история времени</td>
+                    <td>Война и мир</td>
+                </tr>
+                <tr>
+                    <td>Дюна</td>
+                    <td>Шерлок Холмс: Этюд в багровых тонах</td>
+                    <td>История науки от древности до наших дней</td>
+                </tr>
+                <tr>
+                    <td>Замок из стекла</td>
+                    <td>Девушка с татуировкой дракона</td>
+                    <td>Космос: Новая одиссея</td>
+                    <td>Неизвестная Земля</td>
+                </tr>
+                <tr>
+                    <td>Темная башня</td>
+                    <td>Убийца</td>
+                    <td>Происхождение и развитие Земли</td>
+                    <td>Человек в высоком замке</td>
+                </tr>
+                <tr>
+                    <td>Оно</td>
+                    <td>Следы на земле</td>
+                    <td>Теория относительности</td>
+                    <td>Семь чудес света</td>
+                </tr>
+                <tr>
+                    <td>Марсианин</td>
+                    <td>Код да Винчи</td>
+                    <td>Основы анатомии</td>
+                    <td>В поисках утраченного времени</td>
+                </tr>
+            </tbody>
+        </table>      
+    </section>
+    
 
-                <label for="birthday">Дата рождения:</label><br>
-                <input type="date" id="birthday" name="birthday"><br><br>
+    <section>
+      <h2>Форма</h2>
+      <form action="#" method="post">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
 
-                <label for="gender">Пол:</label><br>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Мужской</label><br>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Женский</label><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-                <label for="languages">Ваш любимый язык программирования:</label><br>
-                <select id="languages" name="languages[]" multiple>
-                    <option value="Pascal">Pascal</option>
-                    <option value="C">C</option>
-                    <option value="C++">C++</option>
-                    <option value="JavaScript">JavaScript</option>
-                    <option value="PHP">PHP</option>
-                    <option value="Python">Python</option>
-                    <option value="Java">Java</option>
-                    <option value="Haskel">Haskel</option>
-                    <option value="Clojure">Clojure</option>
-                    <option value="Prolog">Prolog</option>
-                    <option value="Scala">Scala</option>
-                    <option value="Fortran">Fortran</option>
-                </select><br><br>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
 
-                <label for="biography">Биография:</label><br>
-                <textarea id="biography" name="biography"></textarea><br><br>
+  <footer>
+    <p>(С) Ульяна Л.</p>
+  </footer>
 
-                <input type="checkbox" id="agreement" name="agreement">
-                <label for="agreement">С контрактом ознакомлен(а)</label><br><br>
-
-                <input type="submit" value="Сохранить">
-            </form>
-            <footer>
-                <p> (c) Лукьяненко Ульяна </p>
-            </footer>
-    </div>
 </body>
+</html>
