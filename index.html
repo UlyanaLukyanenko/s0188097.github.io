@@ -1,108 +1,163 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Задание 2</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>flowerwithan</title>
+  <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+<header> 
+  <div class="logo-container"> 
+  <img class="picture-logo" src="https://i.pinimg.com/736x/68/43/39/6843392734bf5be069d33218e5351bc0--geometric-logo-geometric-designs.jpg" alt="логотип" /> 
+  <h3 class="title">Цветы с поводом и без</h3> 
+  </div> 
+  <nav class="menu"> 
+    <a href="./#hyperlinks">Меню</a> 
+    <a href="./#table">Таблица</a> 
+    <a href="./#forma">Форма</a> 
+  </nav> 
+</header> 
+<div class="content-container"> 
+<div id="hyperlinks" class="content"> 
+  <ul>
+        <p><a href="http://kubsu.ru"> Абсолютная гиперссылка на главную страницу сайта kubsu.ru (HTTP)</a></p>
+        <p><a href="https://travel.yandex.ru/avia/">Абсолютная ссылка на страницу Яндекс Путешествий(HTTPS)</p></li>
 
-  <header>
-    <img src="https://img.freepik.com/premium-vector/abstract-cube-hexagon-colorful-vector-logo-template_248261-83.jpg" alt="" width="100px" height="100px">
-    <h1 style="text-align: center;">Задание 2</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">О нас</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </nav>
-  </header>
-  
+        <p><a href="https://sklad-cvetov.ru" ><img src="https://optim.tildacdn.com/tild3738-3364-4333-b963-636537633732/-/format/webp/flwrs-4.jpg" height=25%" width="30%" "alt="Ссылка на цветочный магазин"></a></p>
 
-  <main>
-    <section>
-      <h2>Список гиперссылок</h2>
-      <ul>
-        <li><a href="#">Ссылка 1</a></li>
-        <li><a href="#">Ссылка 2</a></li>
-        <li><a href="#">Ссылка 3</a></li>
-      </ul>
-    </section>
+        <p><a href="w2.html">Сокращенная ссылка на внутреннюю страницу</a></p> 
+        <p><a href="index.html">Сокращенная ссылка на главную страницу</a></p> 
 
-    <section>
-        <h2>Книги</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th colspan="4">Каталог книг</th>
-                </tr>
-                <tr>
-                    <th>Фантастика</th>
-                    <th>Детектив</th>
-                    <th>Научная литература</th>
-                    <th>Исторические романы</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td rowspan="2">1984</td>
-                    <td>Убийство на улице Морг</td>
-                    <td>Краткая история времени</td>
-                    <td>Война и мир</td>
-                </tr>
-                <tr>
-                    <td>Дюна</td>
-                    <td>Шерлок Холмс: Этюд в багровых тонах</td>
-                    <td>История науки от древности до наших дней</td>
-                </tr>
-                <tr>
-                    <td>Замок из стекла</td>
-                    <td>Девушка с татуировкой дракона</td>
-                    <td>Космос: Новая одиссея</td>
-                    <td>Неизвестная Земля</td>
-                </tr>
-                <tr>
-                    <td>Темная башня</td>
-                    <td>Убийца</td>
-                    <td>Происхождение и развитие Земли</td>
-                    <td>Человек в высоком замке</td>
-                </tr>
-                <tr>
-                    <td>Оно</td>
-                    <td>Следы на земле</td>
-                    <td>Теория относительности</td>
-                    <td>Семь чудес света</td>
-                </tr>
-                <tr>
-                    <td>Марсианин</td>
-                    <td>Код да Винчи</td>
-                    <td>Основы анатомии</td>
-                    <td>В поисках утраченного времени</td>
-                </tr>
-            </tbody>
-        </table>      
-    </section>
-    
+        <p><a href="#section1">Ссылка на фрагмент текущей страницы</a></p>
+        
+        <p><a href="https://playvalorant.com/ru-ru/?in=1201&mn=2006&cc=2409">Ссылка с тремя параметрами</a></p>
 
-    <section>
-      <h2>Форма</h2>
-      <form action="#" method="post">
-        <label for="name">Имя:</label>
-        <input type="text" id="name" name="name" required>
+        <p><a href="https://tonkosti.ru/Черногория?utm_referrer=https%3A%2F%2Fwww.google.com%2F?id=123">Ссылка с параметром id</a></p>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <p><a href="w2.html">Относительная ссылка на страницу в текущем каталоге</a></p>
+        <p><a href="about/sun.html">Относительная ссылка на страницу в каталоге about</a></p>
+        <p><a href="about/about2/space.html">Относительная ссылка на страницу уровнем выше</a></p>
+        <p><a href="about/about2/about3/banana.html">Относительная ссылка на страницу двумя уровнями выше</a></p>
 
-        <button type="submit">Отправить</button>
-      </form>
-    </section>
-  </main>
+        <p>Для ознакомления с товарами <a href="https://www.mvideo.ru/smartfony-i-svyaz-10/smartfony-205">нажмите сюда.</a></p>
 
-  <footer>
-    <p>(С) Ульяна Л.</p>
-  </footer>
+        <p><a href="https://www.letu.ru/product/dolce-milk-krem-dlya-ruk-mulatka-shokoladka/80300018#fragment">Ссылка на фрагмент страницы стороннего сайта</a></p>
 
-</body>
+        <p>
+        <img src="https://www.8ways.ch/application/files/6014/9097/5257/laptop_6.jpg" usemap="#pictureMap" alt="Work Space" width="300" height="300">
+        <map name="pictureMap">
+            <area shape="rect" coords="80,100,205,200" alt="ноутбук" href="https://www.mvideo.ru/products/noutbuk-apple-macbook-air-13-m1-8-256-space-gray-mgn63-30064273">
+            <area shape="circle" coords="225,155,25" alt="кофе" href="https://www.nestleprofessional.ru/article/o_kofe/chto-my-znaem-o-kofe">
+        </map>
+    </p>
+
+        <p><a href="">Ссылка с пустым href</a></p>
+
+        <p><a>Ссылка без href</a></p>
+
+        <p><a href="https://bowling-park.ru" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></p>
+
+        <p><noindex><a href="https://vkusnoitochka.ru">Запрещенная для индексации поисковиками</a></noindex></p> 
+
+
+        <p>
+            <ol>
+                <p><a href="https://ru.wikipedia.org/wiki/Измир" title="Город">Измир</a></li>
+                <p><a href="https://ru.wikipedia.org/wiki/Стамбул" title="Город">Стамбул</a></li>
+            </ol>
+        </p>
+
+        <p><a href="ftp://nastya:2409@https://www.tripadvisor.ru/Tourism-g304074-Budva_Budva_Municipality-Vacations.html/info.txt">Ссылка на файл на сервере FTP</a></p>
+    </ul>
+
+</div>
+<table id="table" class="content">
+  <tr>
+    <th>Тюльпаны</th>
+    <th>Пионы</th>
+    <th>Альстромерия</th>
+    <th>Кол-во цветов</th>
+  </tr>
+  <tr>
+    <td colspan="2">3000</td>
+    <td>4000</td>
+    <td>11</td>
+  </tr>
+  <tr>
+    <td>5000</td>
+    <td>8000</td>
+    <td>7000</td>
+    <td>31</td>
+  </tr>
+  <tr>
+    <td>8000</td>
+    <td>15000</td>
+    <td>10000</td>
+    <td>51</td>
+  </tr>
+  <tr>
+    <td>10000</td>
+    <td>21000</td>
+    <td>14000</td>
+    <td>71</td>
+  </tr>
+  <tr>
+    <td>13000</td>
+    <td>30000</td>
+    <td>20000</td>
+    <td>101</td>
+  </tr>
+  <tr>
+    <td>100000</td>
+    <td>300000</td>
+    <td>200000</td>
+    <td>1001</td>
+  </tr>
+</table>
+</div>
+ 
+<form id="forma" class="content" method="post"> 
+    <label for="name">ФИО:</label> 
+    <input type="text" id="fio" name="firstname" ><br> 
+ 
+    <label for="phone">Телефон:</label> 
+    <input type="tel" id="phone" name="phone"><br> 
+ 
+    <label for="email">E-mail:</label> 
+    <input type="email" id="email" name="email"><br> 
+ 
+    <label for="birthdate">Дата рождения:</label> 
+    <input type="date" id="birthdate" name="birthdate"><br> 
+ 
+    <label>Пол:</label> 
+    <input type="radio" id="male" name="gender" value="male" checked> 
+    <label for="male">Мужской</label> 
+    <input type="radio" id="female" name="gender" value="female"> 
+    <label for="female">Женский</label><br> 
+ 
+    <label for="programming-languages">Любимый язык программирования:</label> 
+    <select id="programming-languages" name="programming-languages[]" multiple> 
+      <option value="Pascal">Pascal</option> 
+      <option value="C">C</option> 
+      <option value="C++">C++</option> 
+      <option value="JavaScript">JavaScript</option> 
+      <option value="PHP">PHP</option> 
+      <option value="Python">Python</option> 
+      <option value="Java">Java</option> 
+      <option value="Haskell">Haskell</option> 
+    </select><br> 
+    <label for="biography">Биография:</label><br> 
+    <textarea id="biography" name="biography"></textarea><br> 
+    <input type="checkbox" id="contract" name="contract" required> 
+    <label for="contract">С контрактом ознакомлен(а)</label><br> 
+ 
+    <input type="submit" value="Сохранить"> 
+  </form> 
+<footer> 
+  <div class="foo-body"> 
+    (c) Ульяна Л.
+  </div> 
+</footer> 
+</body> 
 </html>

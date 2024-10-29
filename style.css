@@ -1,0 +1,169 @@
+body {
+    margin:0;
+}
+header{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;    
+    width:100%;
+    padding: 0;    
+    margin:0;
+}
+.logo-container{
+    width: 100%;    
+    display: flex;
+    justify-content: center;    
+    background-color:#ffb8c6;
+}
+.picture-logo{
+    width:100px;
+    height:100px;
+    float:left;
+    margin:10px;
+}
+nav {
+    min-height: 120px;
+    width: 400px;
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-between;    
+    align-items: center;
+    max-width: 80%;    
+    height:100%;
+    padding:0;    
+    margin:0;
+    background-color: #A9A9A9;
+}
+.title{
+    align-content: center;
+    text-align: center;    
+    float: left;
+    margin: 10px; 
+    color: #ffffff;
+}
+
+nav a{    
+    margin: 10px;
+    color: black;    
+    text-decoration: none;
+}
+ul{    
+    padding: 0;
+}
+li{
+    margin: 5px 0 5px 0;
+}
+.content{    
+     margin: 20px auto;
+     background-color:#bfefff ;
+     padding: 20px;
+}
+
+.content-container{    
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;    
+    width: 100%;
+    margin: 0;    
+    padding: 0;
+}
+
+#table {    order:0;
+}
+#hyperlinks {    order:1;
+}    
+#forma{    order:2;
+}
+
+table {
+    font-size: 15px;
+    background-color: pink;
+}
+td, th{
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 1px;
+
+}
+
+th{
+    background: #A9A9A9;
+}
+tr:nth-child(even){
+    background-color: pink;
+}
+
+tr:nth-child(odd){
+    background-color: #A9A9A9;
+}
+form{
+    max-width: 80%;    width: 300px;
+    display: flex;    flex-direction: column;
+    align-items: center;    justify-content: center;
+    margin: 0;    padding: 0;
+    background-color: #FBDCFF;
+}
+footer{
+    display: flex;    align-items: center;
+    width: 100%;    margin: 0;
+    padding: 0; 
+    background-color: #ffb8c6;    
+   height: 100px;
+}
+
+@media only screen and (min-width: 800px) {
+    html {
+        font-size: 20px;
+    }
+
+    nav {
+        height: auto;
+        max-width: 20%;
+        flex-direction: row;
+    }
+
+    .content-container {
+    }
+
+    .content:not(table) {
+        font-size: 20px;
+    }
+
+    table {
+        font-size: 35px;
+        text-align: left; /* Выровняем текст в таблице по левому краю */
+    }
+
+    form {
+        font-size: 25px;
+        padding: 30px;
+    }
+
+    .logo-container {
+        align-content: start;
+        justify-content: start;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .desktop {
+        display: flex;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    #table {
+        order: 1;
+    }
+
+    #hyperlinks {
+        order: 0;
+    }
+}
