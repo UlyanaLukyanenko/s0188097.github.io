@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", function () {
             let res = parseInt(product.value) * kolt;
             result.innerText = res;
         } else {
-            result.innerText = "Некорректный ввод количества, пожалуйста, напишите число!";
+            result.innerText = "Некорректный ввод количества, пожалуйста, напишите число (положительное)!";
         }
     });
 });
