@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Галерея слайдер </title> 
+  <style> 
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      padding: 0; 
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+    } 
+
+.gallery-container { 
+  width: 90%; 
+  max-width: 800px; 
+  overflow: hidden; 
+  position: relative; 
+} 
+
+.gallery-wrapper { 
+  display: flex; 
+  transition: transform 0.3s ease-in-out; 
+} 
+
+.gallery-item { 
+  flex: 0 0 33.33%; 
+  box-sizing: border-box; 
+  padding: 10px; 
+} 
+
+.gallery-item img { 
+  width: 100%; 
+  display: block; 
+  border-radius: 10px; 
+} 
+
+.arrow { 
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white; 
+  border: none; 
+  cursor: pointer; 
+  padding: 10px; 
+  border-radius: 50%; 
+  z-index: 10; 
+} 
+
+.arrow-left { 
+  left: 10px; 
+} 
+
+.arrow-right { 
+  right: 10px; 
+} 
+
+.pager { 
+  margin-top: 15px; 
+  text-align: center; 
+} 
+
+@media (max-width: 600px) { 
+  .gallery-item { 
+    flex: 0 0 100%; 
+  } 
+} 
+
+</style> 
+</head> 
+<body> 
+
+<div class="gallery-container"> 
+  <button class="arrow arrow-left" id="prev">←</button> 
+  <div class="gallery-wrapper" id="gallery"> 
+    <div class="gallery-item"> 
+      <img src="https://s16.stc.all.kpcdn.net/russia/wp-content/uploads/2022/08/Vladimir-samye-krasivye-goroda.jpg" alt="Владимир"> 
+    </div> 
+    <div class="gallery-item"> 
+      <img src="https://s13.stc.all.kpcdn.net/russia/wp-content/uploads/2022/08/Rostov-na-Donu-samye-krasivye-goroda.jpg" alt="Ростов-на-Дону"> 
+    </div> 
+    <div class="gallery-item"> 
+      <img src="https://s1.stc.all.kpcdn.net/russia/wp-content/uploads/2021/10/Pyatigorsk-panorama-2048_Ahmadullin-Dmitrij.jpg" alt="Пятигорск"> 
+    </div> 
+    <div class="gallery-item"> 
+      <img src="https://s10.stc.all.kpcdn.net/russia/wp-content/uploads/2021/10/Moskva-2048_pixabay.com_.jpg" alt="Москва"> 
+    </div> 
+    <div class="gallery-item"> 
+      <img src="https://s5.stc.all.kpcdn.net/russia/wp-content/uploads/2021/10/Voronezh-kamennyj-most-2048_Brazhnikova-Kristina.jpg" alt="Воронеж"> 
+    </div> 
+    <div class="gallery-item"> 
+      <img src="https://s3.stc.all.kpcdn.net/russia/wp-content/uploads/2021/10/Kaliningrad-Rybnaya-derevnya-2048_pixabay.com_.jpg" alt="Калининград"> 
+    </div> 
+    <div class="gallery-item"> 
+      <img src="https://s12.stc.all.kpcdn.net/russia/wp-content/uploads/2022/08/Kazan-samye-krasivye-goroda.jpg" alt="Казань"> 
+    </div> 
+    <div class="gallery-item"> 
+      <img src="https://s5.stc.all.kpcdn.net/russia/wp-content/uploads/2021/03/vlg-9-maya-4.jpg" alt="Волгоград"> 
+    </div> 
+  </div> 
+  <button class="arrow arrow-right" id="next">→</button> 
+</div> 
+<div class="pager" id="pager"></div> 
+
+<script src="slider.js"></script> 
+
+</body> 
+</html>
